@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mme
+# key: mme
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+auto minmax = std::minmax_element(begin(${1:container}), end($1));
+$0

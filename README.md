@@ -6,9 +6,13 @@ Original idea from [Tommy Bennett](https://github.com/tommybennett). It's a port
 
 ## Usage ##
 
-FIXME: explanation
+Build it with Leiningen:
 
-    $ java -jar algorithm-mnemonics-emacs-0.1.0-standalone.jar [args]
+    lein uberjar
+
+Create the snippets
+
+    $ java -jar algorithm-mnemonics-emacs-0.1.0-standalone.jar -p <path_to_write_snippets>
 
 ## Bugs ##
 

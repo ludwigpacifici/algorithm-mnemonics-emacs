@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: rte
+# key: rte
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::rotate(begin(${1:container}), begin($2), end($1));
+$0

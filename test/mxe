@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mxe
+# key: mxe
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+auto pos = std::max_element(begin(${1:container}), end($1));
+$0

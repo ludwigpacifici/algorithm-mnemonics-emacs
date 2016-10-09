@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: lwr
+# key: lwr
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::transform(begin(${1:container}), end($1), begin($1), [](char c) {
+return std::tolower(c);});
+$0

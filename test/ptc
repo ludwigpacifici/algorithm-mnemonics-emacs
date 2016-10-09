@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: ptc
+# key: ptc
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::partition_copy(begin(${1:container}), end($1),
+                  begin($2), end($3));
+$0

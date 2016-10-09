@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: phh
+# key: phh
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::push_heap(begin(${1:container}), end($1));
+$0

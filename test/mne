@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mne
+# key: mne
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+auto pos = std::min_element(begin(${1:container}), end($1));
+$0

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: isu
+# key: isu
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+auto pos = std::is_sorted_until(begin(${1:container}), end($1));
+if (pos != end($1)) {
+  $2
+}
+$0

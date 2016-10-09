@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: psc
+# key: psc
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::partial_sort_copy(begin(${1:container}), end($1),
+                  begin($2), end($3));
+$0

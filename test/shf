@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: shf
+# key: shf
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::random_shuffle(begin(${1:container}), end($1));
+$0

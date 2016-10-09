@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: fin
+# key: fin
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+auto pos = std::find_if_not(begin(${1:container}), end($1),[]($2) {
+  $3
+});
+if (pos != end($1)) {
+  $4
+}
+$0

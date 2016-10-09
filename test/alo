@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: alo
+# key: alo
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+if (std::all_of(begin(${1:container}), end($1), []($2) {
+  $3
+})) {
+  $4
+}
+$0

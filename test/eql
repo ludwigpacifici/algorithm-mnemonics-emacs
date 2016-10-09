@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: eql
+# key: eql
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+if (std::equal(begin(${1:container}), end($1), begin($2))) {
+  $3
+}
+$0

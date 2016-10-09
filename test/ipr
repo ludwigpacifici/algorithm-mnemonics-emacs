@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: ipr
+# key: ipr
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+if (std::is_permutation(begin(${1:container}), end($1), begin($2))) {
+  $3
+}
+$0

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: nno
+# key: nno
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+if (std::none_of(begin(${1:container}), end($1), []($2) {
+  $3
+})) {
+  $4
+}
+$0

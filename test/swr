@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: swr
+# key: swr
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+swap_ranges(begin(${1:container}), end($1), begin($2));
+$0

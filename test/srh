@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: srh
+# key: srh
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+      auto pos = std::search(begin(${1:container}), end($1),
+        egin($2), end($3));
+if (pos != end($1)) {
+        $4
+}
+$0

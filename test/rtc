@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: rtc
+# key: rtc
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::rotate_copy(begin(${1:container}), begin($2), end($1),
+  begin($3));
+$0

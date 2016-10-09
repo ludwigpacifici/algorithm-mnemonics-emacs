@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ita
+# key: ita
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::iota(begin(${1:container}), end($1), $2);
+$0

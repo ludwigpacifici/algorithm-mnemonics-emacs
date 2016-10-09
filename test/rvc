@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: rvc
+# key: rvc
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::reverse_copy(begin(${1:container}), end($1), begin($2));
+$0

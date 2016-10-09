@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: ipt
+# key: ipt
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+if (std::is_partitioned(begin(${1:container}), end($1), []($2) {
+  $3
+})) {
+  $4
+}
+$0

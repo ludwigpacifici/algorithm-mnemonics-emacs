@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: fni
+# key: fni
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+auto pos = std::find_if(begin(${1:container}), end($1), []($2) {
+  $3
+});
+if (pos != end($1)) {
+  $4
+}
+$0

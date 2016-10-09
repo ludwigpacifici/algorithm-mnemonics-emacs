@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: acm
+# key: acm
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+auto sum = std::accumulate(begin(${1:container}), end($1), 0);
+$0

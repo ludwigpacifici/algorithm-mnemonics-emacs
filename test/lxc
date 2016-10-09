@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: lxc
+# key: lxc
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+if (std::lexigraphical_compare(begin(${1:container}), end($1), 
+  begin($2), end($3)) {
+  $4
+}
+$0

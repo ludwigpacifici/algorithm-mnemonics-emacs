@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: iss
+# key: iss
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+if (std::is_sorted(begin(${1:container}), end($1))) {
+  $2
+}
+$0

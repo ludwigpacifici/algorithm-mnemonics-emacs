@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: nxp
+# key: nxp
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+if (std::next_permutation(begin(${1:container}), end($1))) {
+        $2
+}
+$0

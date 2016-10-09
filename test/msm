@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: msm
+# key: msm
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+auto values = std::mismatch(begin(${1:container}), end($1), begin($1));
+if (values.first == end($1)) {
+        $2
+} else {
+        $3
+}
+$0

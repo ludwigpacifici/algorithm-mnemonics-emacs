@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sts
+# key: sts
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::stable_sort(begin(${1:container}), end($1));
+$0

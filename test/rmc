@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: rmc
+# key: rmc
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::remove_copy(begin(${1:container}), end($1),
+  begin($1), $2);
+$0

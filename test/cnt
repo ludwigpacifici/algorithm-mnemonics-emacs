@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: cnt
+# key: cnt
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+auto n = std::count(begin(${1:container}), end($1), $2);
+$0

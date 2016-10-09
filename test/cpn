@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: cpn
+# key: cpn
+# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
+# --
+std::copy_n(begin(${1:container}), $2, end($1));
+$0
