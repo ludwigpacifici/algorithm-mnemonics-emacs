@@ -1,8 +1,8 @@
 # -*- mode: snippet -*-
-# name: rtc
+# name: rotate_copy
 # key: rtc
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::rotate_copy(begin(${1:container}), begin($2), end($1),
-  begin($3));
+std::rotate_copy(std::begin(${1:container}), std::begin($2), std::end($1),
+  std::begin($3));
 $0

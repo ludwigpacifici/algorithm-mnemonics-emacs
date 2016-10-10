@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: pst
+# name: partial_sort
 # key: pst
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::partial_sort(begin(${1:container}), end($1), end($1));
+std::partial_sort(std::begin(${1:container}), std::end($1), std::end($1));
 $0

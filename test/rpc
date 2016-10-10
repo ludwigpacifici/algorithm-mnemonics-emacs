@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: rpc
+# name: replace_copy
 # key: rpc
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::replace_copy(begin(${1:container}), end($1), begin($1), $2, $3);
+std::replace_copy(std::begin(${1:container}), std::end($1), std::begin($1), $2, $3);
 $0

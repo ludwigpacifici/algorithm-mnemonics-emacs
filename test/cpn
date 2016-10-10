@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: cpn
+# name: copy_n
 # key: cpn
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::copy_n(begin(${1:container}), $2, end($1));
+std::copy_n(std::begin(${1:container}), $2, std::end($1));
 $0

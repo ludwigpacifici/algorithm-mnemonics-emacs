@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: mpb
+# name: move_backward
 # key: mpb
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::move_backward(begin(${1:container}), end($1), end($1));
+std::move_backward(std::begin(${1:container}), std::end($1), std::end($1));
 $0

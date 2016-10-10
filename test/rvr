@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: rvr
+# name: reverse
 # key: rvr
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::reverse(begin(${1:container}), end($1));
+std::reverse(std::begin(${1:container}), std::end($1));
 $0

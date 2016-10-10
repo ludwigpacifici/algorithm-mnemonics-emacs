@@ -12,10 +12,13 @@
    ["-h" "--help"]])
 
 (defn- parse [s]
-  (xml/parse
-   (java.io.ByteArrayInputStream. (.getBytes s))))
+  (xml/parse (java.io.ByteArrayInputStream. (.getBytes s))))
 
 (defn- snippet-name [mnemonic]
+  "Name of the mnemonic"
+  (get-in mnemonic [:attrs :en]))
+
+(defn- snippet-key [mnemonic]
   "Name of the mnemonic"
   (get-in mnemonic [:attrs :n]))
 
@@ -29,10 +32,10 @@
     (println "Writting snippet in " path)
     (spit path snippet)))
 
-(defn- snippet-data [name code]
+(defn- snippet-data [name key code]
   (str "# -*- mode: snippet -*-\n"
        "# name: " name "\n"
-       "# key: " name "\n"
+       "# key: " key "\n"
        "# contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>\n"
        "# --"
        code
@@ -60,10 +63,11 @@
 
 (defn- snippet [mnemonic directory]
   (let [name (snippet-name mnemonic)
+        key (snippet-key mnemonic)
         code (-> (snippet-code mnemonic)
                  sanitize
                  convert-placeholders)]
-    (snippet-write name (snippet-data name code) directory)))
+    (snippet-write key (snippet-data name key code) directory)))
 
 (defn- do-it [path file]
   (let [raw-mnemonics (parse (slurp file))

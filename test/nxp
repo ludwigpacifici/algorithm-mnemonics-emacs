@@ -1,9 +1,9 @@
 # -*- mode: snippet -*-
-# name: nxp
+# name: next_permutation
 # key: nxp
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-if (std::next_permutation(begin(${1:container}), end($1))) {
-        $2
+if (std::next_permutation(std::begin(${1:container}), std::end($1))) {
+  $2
 }
 $0

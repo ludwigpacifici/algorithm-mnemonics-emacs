@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: phh
+# name: push_heap
 # key: phh
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::push_heap(begin(${1:container}), end($1));
+std::push_heap(std::begin(${1:container}), std::end($1));
 $0

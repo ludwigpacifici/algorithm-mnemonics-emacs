@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: uqe
+# name: unique
 # key: uqe
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-auto pos = std::unique(begin(${1:container}), end($1));
+auto pos = std::unique(std::begin(${1:container}), std::end($1));
 $0

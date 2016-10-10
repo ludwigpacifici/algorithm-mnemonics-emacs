@@ -1,9 +1,9 @@
 # -*- mode: snippet -*-
-# name: fre
+# name: for_each
 # key: fre
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::for_each(begin(${1:container}), end($1), []($2) {
+std::for_each(std::begin(${1:container}), std::end($1), []($2) {
   $3
 });
 $0

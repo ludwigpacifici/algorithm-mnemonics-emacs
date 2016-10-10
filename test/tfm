@@ -1,10 +1,10 @@
 # -*- mode: snippet -*-
-# name: tfm
+# name: transform
 # key: tfm
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::transform(begin(${1:container}), end($1),
-  begin($1), []($2) {
+std::transform(std::begin(${1:container}), std::end($1),
+  std::begin($1), []($2) {
 $3%
 });
 $0

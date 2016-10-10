@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: rte
+# name: rotate
 # key: rte
 # contributor: Tommy BENNETT and Ludwig PACIFICI <ludwig@lud.cc>
 # --
-std::rotate(begin(${1:container}), begin($2), end($1));
+std::rotate(std::begin(${1:container}), std::begin($2), std::end($1));
 $0
