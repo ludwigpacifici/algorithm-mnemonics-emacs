@@ -18,7 +18,7 @@ Create the snippets:
 
 ### Via Yasnippet ###
 
-It should be [soon available](https://github.com/AndreaCrotti/yasnippet-snippets/pull/163) by default in YASnippet.
+Snippets are available [by default](https://github.com/AndreaCrotti/yasnippet-snippets/tree/master/c%2B%2B-mode) with YASnippet.
 
 ### Manual ###
 
